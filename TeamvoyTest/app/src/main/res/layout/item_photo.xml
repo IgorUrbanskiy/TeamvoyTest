@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/item_photo_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary_dark"
+    android:foreground="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/item_photo_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        tools:background="@color/colorPrimary_dark" />
+
+    <Button
+        android:id="@+id/item_photo_like_empty"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/item_photo_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/little_margin"
+        android:layout_marginRight="@dimen/little_margin"
+        android:background="@drawable/rounded_white_button"
+        android:drawableLeft="@mipmap/ic_favorite_red"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:padding="@dimen/little_margin"
+        android:textSize="@dimen/title_text_size"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        tools:text="" />
+
+    <Button
+        android:id="@+id/item_photo_like"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/item_photo_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/little_margin"
+        android:layout_marginRight="@dimen/little_margin"
+        android:background="@drawable/rounded_red_button"
+        android:drawableLeft="@mipmap/ic_favorite_white"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:padding="@dimen/little_margin"
+        android:textSize="@dimen/title_text_size"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/item_photo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignBottom="@+id/item_photo_image"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/little_margin"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_toLeftOf="@id/item_photo_like"
+        android:maxLines="1"
+        android:shadowColor="@color/colorTextDark2nd"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        tools:text="Alfredo Wong, 2016-7-21"
+        android:textColor="@color/colorTextLight"
+        android:textSize="@dimen/subtitle_text_size"
+        tools:ignore="RtlHardcoded" />
+</RelativeLayout>
